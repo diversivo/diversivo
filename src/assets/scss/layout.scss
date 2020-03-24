@@ -1,0 +1,79 @@
+// LAYOUT
+.container{
+    width: 100%;
+    padding: 3rem 5.45rem;
+    @media only screen and (max-width: $small){
+        padding: 3rem 2rem .80rem 2rem;
+    }
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 5.15em 0 3.25em 0;
+    @media only screen and (max-width: $small){
+        padding: 0;
+    }
+}
+
+// Secondary main content for pages with primary text who don't use 100% height.
+
+.main-secondary{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.g-2fr-3fr{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 100%;
+    grid-gap: 36px;
+    height: 100%;
+    @media only screen and (max-width: $small){
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 60%;
+    }
+}
+
+.g-30-70{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    grid-gap: 36px;
+    height: 100%;
+    justify-content: space-between;
+    justify-items: stretch;
+    @media only screen and (max-width: $small){
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 60%;
+    }
+}
+
+.content__left, .content__right{
+    align-self: center;
+}
+
+.order-s1-m2{
+    order: 0;
+    @media only screen and (min-width: $small){
+        order: 1;
+    }
+}
+.order-s2-m1{
+    order: 1;
+    @media only screen and (min-width: $small){
+        order: 0;
+    }
+}
+
+.flex-cc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

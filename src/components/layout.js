@@ -7,10 +7,10 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+//import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,6 +18,10 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          menuLinks {
+            name
+            link
+          }
         }
       }
     }
@@ -25,22 +29,35 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
+      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
+      <div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+        <footer className="footer__container">
+          <div className="container footer__grid">
+              <div>
+                  <p> 
+                      Dr. Manuel Barros Borgoño 71, 1105.<br></br> 
+                      Providencia, Santiago Chile.<br></br> 
+                      hola@diversivo.cl<br></br> 
+                      +569 4884 4960<br></br> 
+                  </p>
+                  <p className="h6">
+                  © {new Date().getFullYear()}, Todos los derechos reservados Diversivo SPA.
+                  </p>
+              </div>
+              <div className="s-hidden">
+                <nav className="footer__nav">
+                  <ul className="footer__nav__ul">
+                    <li className="footer__nav__li"><Link to="/que-hacemos">QUE HACEMOS</Link></li>
+                    <li className="footer__nav__li"><Link to="/trabajos">TRABAJOS</Link></li>
+                    <li className="footer__nav__li"><Link to="/somos">SOMOS</Link></li>
+                    <li className="footer__nav__li"><Link to="/contacto">CONTACTO</Link></li>
+                  </ul>
+                </nav>
+              </div>
+          </div>
+        </footer>
     </>
   )
 }

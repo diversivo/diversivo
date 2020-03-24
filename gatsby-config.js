@@ -1,8 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Diversivo agencia de Desarrollo de Software, Branding y Marketing Digital`,
+    description: `Ayudamos a marcas y negocios a ganar ventaja competitiva en un mundo conectado.`,
+    author: `@diversivo.cl`,
+        menuLinks:[
+            {
+               name:'QUE HACEMOS',
+               link:'/que-hacemos'
+            },
+            {
+              name:'TRABAJOS',
+              link:'/trabajos'
+            },
+            {
+              name:'SOMOS',
+              link:'/somos'
+            },
+            {
+              name:'CONTACTO',
+              link:'/contacto'
+            }
+          ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -21,13 +39,27 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1c1c1c`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: `${__dirname}/src/assets/svg/`, // See below to configure properly
+        }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: ["./src/assets/scss/"],
+      },
+    }
+    // this (optional) plugin enables Progressive Web App  Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],

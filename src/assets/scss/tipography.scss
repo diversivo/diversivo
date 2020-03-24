@@ -1,0 +1,72 @@
+// Tipography
+
+.biggerTitle{
+    font-size: 3.25rem;
+    @media only screen and(max-width: $small){
+        font-size: 1.9rem;
+    }
+}
+
+h1 {
+    margin-bottom: 1.45rem;
+    text-rendering: optimizeLegibility;
+    font-size: var(--h1-size);
+    line-height: 1.25;
+    font-weight: 400;
+}
+
+h2 {
+    margin-bottom: 1.45rem;
+    color: inherit;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    font-size: 1.62671rem;
+    line-height: 1.1;
+  }
+h3 {
+    margin-bottom: 1.45rem;
+    color: inherit;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    font-size: 1.38316rem;
+    line-height: 1.1;
+}
+h4 {
+    margin-bottom: 1.45rem;
+    color: inherit;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    font-size: 1rem;
+    line-height: 1.1;
+}
+h5 {
+    margin-bottom: 1.45rem;
+    color: inherit;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    font-size: 0.85028rem;
+    line-height: 1.1;
+}
+h6 {
+    margin-bottom: 1.45rem;
+    color: inherit;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    font-size: 0.78405rem;
+    line-height: 1.1;
+}
+
+pre {
+    font-family: worker, serif;
+    font-size: var(--h3-size);
+    line-height: 1.42;
+    overflow: auto;
+    word-wrap: normal;
+    padding: .15rem 0 .65rem;
+    background: none;
+}
+
+.h6{
+    font-size: var(--h6-size);
+    color: $gray-color;
+}

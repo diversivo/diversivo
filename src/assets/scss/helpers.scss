@@ -1,0 +1,17 @@
+
+
+// el ancho del div al ocupa todo el ancho del viewport
+.h-100vh{
+    height: 100vh;
+}
+
+.seccionMejoresTecnologias__img{
+    align-self: flex-end;
+}
+
+.s-hidden{
+    display: none;
+    @media only screen and (min-width: $small){
+        display: inherit;
+    }
+}
