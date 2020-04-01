@@ -4,7 +4,7 @@
 @import "layout";
 @import "helpers";
 @import url("https://use.typekit.net/gmy5mcq.css");
-@import url("https://use.typekit.net/gmy5mcq.css");
+// @import url("https://use.typekit.net/gmy5mcq.css");
 
 
 
@@ -142,7 +142,7 @@
 .footer__container{
     padding: 4rem 0;
     background-color: black;
-    background-image: url(../../images/footer-logo.svg);
+    background-image: url('../svg/stylesheet/footer-logo.svg');
     background-position: center;
     background-repeat: no-repeat;
 }
