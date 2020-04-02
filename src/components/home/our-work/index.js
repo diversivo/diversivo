@@ -1,40 +1,63 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import Fluid from './fluid';
+
 const OurWork = () => (
-  <div className="container bg-white">
+  <div style={{
+    position: 'relative',
+  }}
+  >
     <div
-      className="content"
+      className="container"
       style={{
-        padding: '10rem 0 6rem 0',
+        pointerEvents: 'none',
+        color: 'black',
+        zIndex: 1000,
+        position: 'absolute',
       }}
     >
       <div
-        className="flex-cc"
+        className="content"
         style={{
-          textAlign: 'center',
+          padding: '10rem 0 6rem 0',
         }}
       >
-        <pre style={{
-          color: '#A8A8A8',
-          fontSize: '1.25rem',
-        }}
+        <div
+          className="flex-cc"
+          style={{
+            textAlign: 'center',
+          }}
         >
-          TE PODEMOS AYUDAR EN
-        </pre>
-        <h1 className="seccionQueHacemos__title">
-          Desarrollo de Software,
-          <br />
-          Branding y Marketing Digital.
-        </h1>
-        <Link
-          className="content__link"
-          to="/our-work/"
-        >
-          QUE HACEMOS
-        </Link>
+          <pre style={{
+            color: '#A8A8A8',
+            fontSize: '1.25rem',
+          }}
+          >
+            TE PODEMOS AYUDAR EN
+          </pre>
+          <h1 className="seccionQueHacemos__title">
+            Desarrollo de Software,
+            <br />
+            Branding y Marketing Digital.
+          </h1>
+          <Link
+            className="content__link"
+            to="/our-work/"
+          >
+            QUE HACEMOS
+          </Link>
+        </div>
       </div>
     </div>
+    <Fluid style={{
+      color: 'white',
+      height: '100%', // Canvas is will respond to size changes without resetting fluid!
+      width: '100%',
+      margin: 0,
+      position: 'relative',
+    }}
+    />
   </div>
 );
 

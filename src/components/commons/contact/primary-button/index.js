@@ -1,24 +1,24 @@
-import React, { Component } from 'react'
-import { Link } from "gatsby"
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
 
 // DQ: Teaching oportunity
 
 class AprimaryButton extends Component {
-
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
-      url: "/contacto",
-      nombre: "contacto"
-    }
+      url: '/contacto',
+      name: 'contacto',
+    };
   }
 
   render() {
+    const { url, name } = this.state;
     return (
-      <Link to={this.state.url} className="primaryButton">{this.state.nombre}</Link>
-    )
+      <Link to={url} className="primaryButton">{name}</Link>
+    );
   }
 }
 
-export default AprimaryButton
+export default AprimaryButton;

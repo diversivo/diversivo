@@ -54,7 +54,12 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-eslint',
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: 'http://localhost:8080/assets/js/fluid-init.js',
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
