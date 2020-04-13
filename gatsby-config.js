@@ -14,7 +14,7 @@ module.exports = {
       },
       {
         name: 'SOMOS',
-        link: '/about',
+        link: '/about-us',
       },
       {
         name: 'CONTACTO',

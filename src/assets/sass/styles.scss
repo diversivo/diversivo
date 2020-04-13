@@ -6,8 +6,6 @@
 @import url("https://use.typekit.net/gmy5mcq.css");
 // @import url("https://use.typekit.net/gmy5mcq.css");
 
-
-
 // Global
 
 .bg-white{
@@ -19,19 +17,48 @@
     }
 }
 
+.center{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.headline--h5{
+    width: 100%;
+    text-align: center;
+    padding: 1em 0 2em 0;
+    font-size: var(--h5-size);
+    letter-spacing: 16px;
+    color: var(--dark-gray);
+}
+
 // Header
 
 .header__container{
-        background: rgba(28,28,28,0.4);
+        // background: rgba(28,28,28,0.4);
         margin-bottom: 1.45rem;
         padding: 0 5.45rem;
         position: fixed;
         top: 0px;
         right: 0px;
         width: 100%;
+        z-index: 100;
+
         @media only screen and (max-width: $small){
             padding: 0 2rem;
         }
+
+        // &::before{
+        //     position: absolute;
+        //     top: -30%;
+        //     left: 0;
+        //     content: '';
+        //     width: 100%;
+        //     height: 90%;
+        //     z-index: 10;
+        //     filter: blur(25px);
+        //     background-color: rgba(0,0,0,0.4);
+        // }
 }
 
 .header__content{
@@ -43,6 +70,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        z-index: 100;
+        position: relative;
 }
 
 .header__logo{
@@ -50,7 +79,6 @@
     flex-basis: 150px;
     flex-shrink: 0;
     height: 24px;
-    z-index: 100;
 }
 
 .header__nav{
@@ -68,7 +96,7 @@
         align-items: flex-start;
         justify-content: center;
         top: 0;
-        left: 100%;
+        left: 120%;
         background-color: rgba(30,30,30,.95);
         width: 100%;
         height: 100vh;
@@ -102,8 +130,7 @@
 }
 
 // buttons
-
-.primaryButton{
+.button{
     padding: .65rem 2rem;
     border-radius: 25px;
     background-color: white;
@@ -111,6 +138,13 @@
     color: black;
     line-height: 1.5em;
     text-transform: uppercase;
+}
+
+.button--primary{
+    background-color:var(--color--blue);
+    color: white;
+    border: none;
+    margin-top: 3em;
 }
 
 
@@ -136,6 +170,66 @@
     } 
 }
 
+// Value component
+
+.value__slide{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 4fr 1fr;
+    grid-template-rows: 1fr 2fr 3.5fr 4fr;
+    height: 400px;
+    max-width: 960px;
+    margin: 0 auto;
+    @media only screen and (max-width: $medium){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
+        height: 300px;
+    }
+}
+
+.value__name{
+    font-size: 5em;
+    font-weight: bold;
+    grid-column: 2 / span 5;
+    grid-row: 3 / 4;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+    @media only screen and (max-width: $medium){
+        font-size: 2.8em;
+        grid-column: 1 / span 2;
+        grid-row: 1 / 2;
+    }
+}
+
+.value__number{
+    color: $primary-color;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    font-size: 18em;
+    font-weight: bold;
+    grid-column: 4 / 5;
+    grid-row: 1 / 4;
+    align-self: top;
+    place-self: center;
+    opacity: .25;
+    @media only screen and (max-width: $medium){
+        font-size: 16em;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+}
+
+.value__description{
+    grid-column: 3 / span 4;
+    grid-row: 4 / span 5;
+    font-size: 1.8em;
+    line-height: 2em;
+    font-weight: lighter;
+    @media only screen and (max-width: $medium){
+        font-size: 1.36em;
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 4;
+    }
+}
 
 //footer
 
@@ -162,3 +256,40 @@
 .footer__nav__li{
     padding: .65rem 0 0 0;
 }
+
+//forms
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2em;
+}
+
+label{
+    padding-bottom: 8px;
+    margin-top: 2.2em;
+}
+
+input[type=text], textarea{
+    padding: 1em;
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: darken($primary-color, 2%);
+    width: 100%;
+    max-width: 620px;
+    &:hover{
+        border-color: var(--color--blue);
+        background-color: darken($primary-color, 15%);
+    }
+    &:focus{
+        border-color: var(--color--green);
+        background-color: darken($primary-color, 50%);
+        outline: none;
+    }
+}
+
+// input[type=textarea]{
+//     height: 320px;
+// }

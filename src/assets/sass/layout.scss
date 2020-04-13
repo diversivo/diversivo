@@ -20,11 +20,11 @@
 
 // Secondary main content for pages with primary text who don't use 100% height.
 
-.main-secondary{
+.main-slider{
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -76,4 +76,75 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.grid-two-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 48px;
+    place-items: center center;
+}
+
+
+// Service Module
+.service__content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__img{
+    width: 100%;
+    flex: 0 0 45%;
+}
+
+.service__text{
+    flex: 0 0 50%;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+// Layout One Col Two Col
+
+.grid-onecol-twocol{
+    display: grid;
+    grid-template: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "MainImage MainImage"
+    "title subtitle";
+    gap: 46px 138px;
+    padding-top: 5em;
+    @media only screen and (max-width: $medium){
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "MainImage"
+        "title"
+        "subtitle";
+    }
+}
+
+.grid-onecol-twocol__main{
+    grid-area: MainImage;
+}
+
+.grid-onecol-twocol__img{
+    width: 100%;
+}
+
+.grid-onecol-twocol__title{
+    grid-area: title;
+}
+
+.grid-onecol-twocol__subtitle{
+    grid-area: subtitle;
+    padding-right: 25%;
 }

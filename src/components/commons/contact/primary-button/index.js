@@ -8,7 +8,7 @@ class AprimaryButton extends Component {
     super(props);
 
     this.state = {
-      url: '/contacto',
+      url: '/contact',
       name: 'contacto',
     };
   }
