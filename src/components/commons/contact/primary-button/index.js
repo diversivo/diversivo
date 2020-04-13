@@ -16,7 +16,7 @@ class AprimaryButton extends Component {
   render() {
     const { url, name } = this.state;
     return (
-      <Link to={url} className="primaryButton">{name}</Link>
+      <Link to={url} className="button button--secondary">{name}</Link>
     );
   }
 }
