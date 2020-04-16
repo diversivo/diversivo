@@ -9,6 +9,7 @@
 
 h1,h2,h3,h4,h5,h6,pre,p{
     text-rendering: optimizeLegibility;
+    color: inherit;
 }
 
 
@@ -21,7 +22,6 @@ h1 {
 
 h2 {
     margin-bottom: 1.45rem;
-    color: inherit;
     font-weight: lighter;
     font-size: var(--h2-size);
     line-height: 1.55;
@@ -29,28 +29,24 @@ h2 {
 
 h3 {
     margin-bottom: 1.45rem;
-    color: inherit;
     font-weight: bold;
     font-size: var(--h3-size);
     line-height: 1.1;
 }
 h4 {
     margin-bottom: 1.45rem;
-    color: inherit;
     font-weight: bold;
     font-size: 1rem;
     line-height: 1.1;
 }
 h5 {
     margin-bottom: 1.45rem;
-    color: inherit;
     font-weight: lighter;
     font-size: var(--h5-size);
     line-height: 1.85;
 }
 h6 {
     margin-bottom: 1.45rem;
-    color: inherit;
     font-weight: bold;
     font-size: var(--h6-size);
     color: $gray-color;
@@ -65,4 +61,17 @@ pre {
     word-wrap: normal;
     padding: .15rem 0 .65rem;
     background: none;
+}
+
+p{
+    font-size: var(--body-size);
+}
+
+.headline--h5{
+    width: 100%;
+    text-align: center;
+    padding: 1em 0 2em 0;
+    font-size: var(--h5-size);
+    letter-spacing: 16px;
+    color: var(--dark-gray);
 }

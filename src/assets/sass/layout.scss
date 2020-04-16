@@ -85,25 +85,7 @@
     gap: 48px;
     place-items: center center;
 }
-
-
-// Service Module
-.service__content{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.service__img{
-    width: 100%;
-    flex: 0 0 45%;
-}
-
-.service__text{
-    flex: 0 0 50%;
-}
-
+// Flex direction
 .row{
     flex-direction: row;
 }

@@ -11,8 +11,8 @@ const Service = ({ category, header, text, img, alt, cssClass }) => (
       <p>{text}</p>
     </div>
 
-    <div className="service__img">
-      <img src={img} alt={alt} />
+    <div className="service__multimedia">
+      <img className="service__img" src={img} alt={alt} />
     </div>
 
   </div>

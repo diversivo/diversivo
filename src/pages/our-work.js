@@ -7,10 +7,10 @@ import MainSlider from '../components/commons/main-slider';
 import MainImage from '../assets/images/somos-head.png';
 import Service from '../components/our-work/slider/service';
 
-import BrandingImg from '../assets/svg/stylesheet/branding.svg';
-import MarketingImg from '../assets/svg/stylesheet/digital-marketing.svg';
-import SoftwareDevelopmentImg from '../assets/svg/stylesheet/software-development.svg';
-import WebsAndApps from '../assets/svg/stylesheet/webs-and-apps.svg';
+import BrandingImg from '../assets/images/branding.png';
+import MarketingImg from '../assets/images/marketing.png';
+import SoftwareDevelopmentImg from '../assets/images/software-development.png';
+import WebsAndApps from '../assets/images/webs-y-apps.png';
 
 const OurWork = () => (
   <Layout>
@@ -22,7 +22,7 @@ const OurWork = () => (
         alt="test"
       />
       <Service
-        category="Branding"
+        category="branding"
         header="Hacemos que las marcas expresen su personalidad y valores de manera consistente y memorable."
         text="Creando vínculos con sus clientes que les permitan tener duraderas y nutritivas relaciones."
         img={BrandingImg}
@@ -30,7 +30,7 @@ const OurWork = () => (
         cssClass="row"
       />
       <Service
-        category="Marketing Digital"
+        category="marketing digital"
         header="Posicionamos marcas y servicios en un mundo digital con diseño y analítica de datos."
         text="El Marketing Digital es ciencia y diseño."
         img={MarketingImg}
@@ -38,7 +38,7 @@ const OurWork = () => (
         cssClass="row-reverse"
       />
       <Service
-        category="Desarrollo de Software"
+        category="desarrollo de Software"
         header="Desarrollamos software a medida con metodologías ágiles para automatizar procesos y generar valor."
         text="El mejor software es siempre a tu medida."
         img={SoftwareDevelopmentImg}
@@ -46,7 +46,7 @@ const OurWork = () => (
         cssClass="row"
       />
       <Service
-        category="Web's y Apps"
+        category="web's y apps"
         header="Digitalizamos ideas utilizando las últimas tecnologías web y móviles para acercar clientes a las marcas."
         text="La interacción digital genera oportunidades y clientes."
         img={WebsAndApps}

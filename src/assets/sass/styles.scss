@@ -1,5 +1,5 @@
-@import "reset";
 @import "variables";
+@import "reset";
 @import "tipography";
 @import "layout";
 @import "helpers";
@@ -21,15 +21,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-}
-
-.headline--h5{
-    width: 100%;
-    text-align: center;
-    padding: 1em 0 2em 0;
-    font-size: var(--h5-size);
-    letter-spacing: 16px;
-    color: var(--dark-gray);
 }
 
 // Header
@@ -246,30 +237,30 @@
     }
 }
 
-//footer
-
-.footer__container{
-    padding: 4rem 0;
-    background-color: black;
-    background-image: url('../svg/stylesheet/footer-logo.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.footer__grid{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: auto;
-    grid-gap: 16px;
-    place-items: start center;
+// Service Module
+.service__content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
     @media only screen and (max-width: $small){
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto;
-    } 
+        flex-direction: column;
+    }
 }
 
-.footer__nav__li{
-    padding: .65rem 0 0 0;
+.service__multimedia{
+    width: 100%;
+    flex: 0 0 65%;
+}
+
+.service__text{
+    flex: 0 0 35%;
+}
+
+.service__img{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 //forms
@@ -305,6 +296,28 @@ input[type=text], textarea{
     }
 }
 
-// input[type=textarea]{
-//     height: 320px;
-// }
+//footer
+
+.footer__container{
+    padding: 4rem 0;
+    background-color: black;
+    background-image: url('../svg/stylesheet/footer-logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer__grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    grid-gap: 16px;
+    place-items: start center;
+    @media only screen and (max-width: $small){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    } 
+}
+
+.footer__nav__li{
+    padding: .65rem 0 0 0;
+}
