@@ -1,0 +1,30 @@
+.stack-animation__content{
+  position: relative;
+}
+
+.stack-animation__box{
+  --size: 10%;
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border: 1px solid red;
+}
+
+.stack-animation__box__frontend{
+  left: 44.5%;
+  top: 4.5%;
+}
+
+.stack-animation__box__develop{
+  left: 81.5%;
+  top: 35.2%;
+}
+
+.stack-animation__box__backend{
+  left: 26.3%;
+  top: 52.5%;
+}
+
+.stack__img{
+  align-self: flex-end;
+}

@@ -1,12 +1,12 @@
 
 import React from 'react';
-import IsometricArt from '../../../assets/svg/stylesheet/isometric-art-tecnology.svg';
+import IsometricArt from '../../../assets/images/tecnologias-isometrica.jpg';
 
 // DQ: Review ways to import SVG
 const Stack = () => (
   <div className="container">
-    <div className="content h-100v">
-      <div className="g-30-70">
+    <div className="content height-100vh">
+      <div className="grid-col40-col60">
         <div className="content__right">
           <pre>
             PARA UN MUNDO CONECTADO
@@ -19,9 +19,12 @@ const Stack = () => (
             tecnologías.
           </h2>
         </div>
-        <div className="content__left">
+        <div className="content__left stack-animation__content">
+          <div className="stack-animation__box stack-animation__box__frontend" />
+          <div className="stack-animation__box stack-animation__box__develop" />
+          <div className="stack-animation__box stack-animation__box__backend" />
           <img
-            className="seccionMejoresTecnologias__img"
+            className="stack__img"
             src={IsometricArt}
             alt="Mejores tecnologías arte"
           />
