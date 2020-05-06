@@ -10,7 +10,7 @@ import Service from '../components/our-work/slider/service';
 import BrandingImg from '../assets/images/branding.png';
 import MarketingImg from '../assets/images/marketing.png';
 import SoftwareDevelopmentImg from '../assets/images/software-development.png';
-import WebsAndApps from '../assets/images/webs-y-apps.png';
+import WebsAndApps from '../assets/images/webs-y-apps.jpg';
 
 const OurWork = () => (
   <Layout>
