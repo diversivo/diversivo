@@ -2,7 +2,7 @@ import React from 'react';
 import PrimaryButton from './primary-button';
 
 const Contact = () => (
-  <div className="container">
+  <div className="container bg__dark-color">
     <div className="cContact__content">
       <div className="cContact__leftBox">
         <h1>¿Listo para hablar?</h1>

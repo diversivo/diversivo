@@ -3,29 +3,59 @@
   max-width: 900px;
 }
 
+.stack__img{
+  align-self: flex-end;
+}
+
+.stack__text{
+  align-self: center;
+}
+
 .stack-animation__box{
-  --size: 10%;
+  --size: 9.85%;
   position: absolute;
   width: var(--size);
   height: var(--size);
-  border: 1px solid red;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation-name: stack;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  border-radius: 50%;
 }
 
 .stack-animation__box__frontend{
-  left: 44.5%;
+  left: 44.58%;
   top: 4.5%;
 }
 
 .stack-animation__box__develop{
-  left: 81.5%;
+  left: 81.55%;
   top: 35.2%;
 }
 
 .stack-animation__box__backend{
-  left: 26.3%;
+  left: 26.45%;
   top: 52.5%;
 }
 
-.stack__img{
-  align-self: flex-end;
+// animaciones
+
+@keyframes stack {
+    0% {background-position: 600% 0;}
+    40% { background-position: center 0;}
+    60% { background-position: center 0;}
+    100% {background-position: -600% 0;}
+}
+
+// logos
+
+.react{
+  background-image: url('../svg/stylesheet/react.svg');
+}
+
+.ruby{
+  background-image: url('../svg/stylesheet/ruby-on-rails.svg');
 }

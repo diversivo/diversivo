@@ -6,7 +6,7 @@ const Service = ({ category, header, text, img, alt, cssClass }) => (
   <div className={`${cssClass} content service__content`}>
 
     <div className="service__text">
-      <pre>{category}</pre>
+      <pre className="service__pre">{category}</pre>
       <h2>{header}</h2>
       <p>{text}</p>
     </div>

@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const MainSlider = ({ pre, title, text, img, alt }) => (
   <div className="content">
-    <div className="main-slider">
-      <div className="main-slider__text">
+    <div className="main-secondary-slider">
+      <div className="main-secondary-slider__text">
         {
           pre.length > 0 ? <pre>{pre}</pre> : <pre>{pre.defaultProps}</pre>
         }
@@ -17,7 +17,7 @@ const MainSlider = ({ pre, title, text, img, alt }) => (
       </div>
       {
         img
-          ? <div className="main-slider__img"><img src={img} alt={alt} /></div>
+          ? <div className="main-secondary-slider__img"><img src={img} alt={alt} /></div>
           : <p />
       }
     </div>

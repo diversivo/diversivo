@@ -1,23 +1,18 @@
 import React from 'react';
-import mainImage from '../../../assets/images/arte-principal.png';
-
+import bgArt from '../../../assets/video/main-bg-art.mp4';
+// import bgArtPortrait from '../../../assets/video/main-bg-art-portrait.mp4';
 
 const Slider = () => (
-  <div className="container h-100vh">
-    <div className="content">
-      <div className="g-2fr-3fr">
-        <div className="content__left order-s2-m1">
-          <pre>
-            bienvenido
-          </pre>
-          <h1>
-            Ayudamos a marcas y negocios a ganar ventaja competitiva en un mundo conectado.
-          </h1>
-        </div>
-        <div className="content__right order-s1-m2">
-          <img src={mainImage} alt="arte principal" />
-        </div>
-      </div>
+  <div className="main-slider">
+    <video className="main-slider__bg" playsInline autoPlay muted loop id="video">
+      <source src={bgArt} type="video/mp4" />
+      {/* <source src={bgArtPortrait} type="video/mp4" /> */}
+    </video>
+    <div className="main-slider__text">
+      <pre> bienvenido </pre>
+      <h1>
+        Ayudamos a marcas y negocios a ganar ventaja competitiva en un mundo conectado.
+      </h1>
     </div>
   </div>
 );

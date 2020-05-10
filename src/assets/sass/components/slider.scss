@@ -1,0 +1,44 @@
+.main-slider{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.main-slider__bg{
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.main-slider__text{
+  position: relative;
+  z-index: 10;
+  max-width: 60%;
+  padding: 0 0 0 5.15em;
+  @media only screen and (max-width: $medium){
+    max-width: 90%;
+    padding: 1em;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+// Sliders secundarios para otras páginas que no sean la principal.
+
+.main-secondary-slider{
+  height: 324px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media only screen and (max-width: $medium){
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+  }
+}

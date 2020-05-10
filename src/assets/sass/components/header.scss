@@ -1,0 +1,86 @@
+// Header
+
+.header__container{
+  margin-bottom: 1.45rem;
+  padding: 0 5.45rem;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  z-index: 100;
+
+  @media only screen and (max-width: $medium){
+    padding: 0 2.5rem;
+  }
+  @media only screen and (max-width: $small){
+      padding: 0 2rem;
+  }
+}
+
+.header__content{
+  margin: 0 auto;
+  max-width: 1600;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  position: relative;
+}
+
+.header__logo{
+max-width: 140px;
+flex-basis: 150px;
+flex-shrink: 0;
+height: 24px;
+z-index: 10;
+position: relative;
+}
+
+.header__nav{
+display: flex;
+}
+
+.header__nav__ul{
+display: flex;
+flex-direction: row;
+flex: 1; 
+margin: 0;
+@media only screen and (max-width: $medium){
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-start;
+  justify-content: center;
+  top: 0;
+  left: 120%;
+  background-color: rgba(30,30,30,.95);
+  width: 100vw;
+  height: 100vh;
+}
+}
+
+.header__nav__link{
+  color: var(--color--white); 
+  text-decoration: 'none';
+  @media only screen and (max-width: $medium){
+    font-size: var(--h1-size);
+    letter-spacing: 4px;
+  }
+}
+
+.header__hamburguer-menu{
+z-index: 10;
+display: none;
+@media only screen and (max-width: $medium){
+  display: inherit;
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+}
+}
+
+.js-header__nav--active{
+left: -40px;
+}

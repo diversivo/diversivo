@@ -6,10 +6,10 @@ import HamburguerMenu from '../../../assets/svg/inline/hamburguermenu.svg';
 
 
 // DQ: Esto está mal
-// const triggerMenu = () => {
-//   const menuNav = document.getElementById('js-header__nav');
-//   menuNav.classList.toggle('js-header__nav--active');
-// };
+const triggerMenu = () => {
+  const menuNav = document.getElementById('js-header__nav');
+  menuNav.classList.toggle('js-header__nav--active');
+};
 
 const Header = ({ menuLinks }) => (
   <header className="header__container">
@@ -23,7 +23,7 @@ const Header = ({ menuLinks }) => (
       <HamburguerMenu
         className="header__hamburguer-menu"
         id="js-trigger-menu"
-      // onClick={triggerMenu}
+        onClick={triggerMenu}
       />
       <nav className="header__nav">
         <ul id="js-header__nav" className="header__nav__ul">
@@ -39,7 +39,7 @@ const Header = ({ menuLinks }) => (
                   }}
                 >
                   <Link
-                    style={{ color: 'white', textDecoration: 'none' }}
+                    className="header__nav__link"
                     to={link.link}
                   >
                     {link.name}

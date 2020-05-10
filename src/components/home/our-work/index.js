@@ -31,12 +31,11 @@ const OurWork = () => (
         >
           <pre style={{
             color: '#A8A8A8',
-            fontSize: '1.25rem',
           }}
           >
             TE PODEMOS AYUDAR EN
           </pre>
-          <h1 className="seccionQueHacemos__title">
+          <h1 className="bigger-title">
             Desarrollo de Software,
             <br />
             Branding y Marketing Digital.

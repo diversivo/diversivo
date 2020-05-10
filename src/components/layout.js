@@ -35,8 +35,8 @@ const Layout = ({ children }) => {
       <div>
         <div>{children}</div>
       </div>
-      <footer className="footer__container">
-        <div className="container footer__grid">
+      <footer className="container footer__container">
+        <div className="footer__grid">
           <div>
             <p>
               Dr. Manuel Barros Borgoño 71, 1105.
@@ -48,11 +48,11 @@ const Layout = ({ children }) => {
               +569 4884 4960
               <br />
             </p>
-            <p className="h6">
+            <h6>
               ©
               {new Date().getFullYear()}
               , Todos los derechos reservados Diversivo SPA.
-            </p>
+            </h6>
           </div>
           <div className="s-hidden">
             <nav className="footer__nav">
