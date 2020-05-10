@@ -8,7 +8,7 @@ const ContactForm = () => (
     <input name="email" id="email" type="text" />
     <label htmlFor="message">Mensaje*:</label>
     <textarea name="message" rows="4" cols="50" id="message" />
-    <button className="button button--primary">Envíar</button>
+    <button className="button button--primary">Enviar</button>
   </form>
 );
 

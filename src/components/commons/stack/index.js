@@ -9,14 +9,14 @@ const Stack = () => (
       <div className="grid-col40-col60">
         <div className="stack__text">
           <pre>EN MUNDO CONECTADO</pre>
-          <h2>
+          <h1>
             Usamos las mejores tecnologías.
-          </h2>
+          </h1>
         </div>
         <div className="stack-animation__content">
           <div className="stack-animation__box stack-animation__box__frontend react" />
-          <div className="stack-animation__box stack-animation__box__develop react" />
-          <div className="stack-animation__box stack-animation__box__backend ruby" />
+          <div className="stack-animation__box stack-animation__box__develop ruby" />
+          <div className="stack-animation__box stack-animation__box__backend aws" />
           <img
             className="stack__img"
             src={IsometricArt}

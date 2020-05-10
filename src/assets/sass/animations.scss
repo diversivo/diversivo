@@ -1,0 +1,9 @@
+@keyframes blur {
+  0%    { filter: blur(3em); }
+  100%  { filter: blur(0); }
+}
+
+.container,.main-slider{
+  animation-name: blur;
+  animation-duration: .65s;
+}

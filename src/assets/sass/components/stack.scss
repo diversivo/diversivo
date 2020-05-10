@@ -9,6 +9,9 @@
 
 .stack__text{
   align-self: center;
+  @media only screen and (max-width: $small){
+    text-align: center;
+  }
 }
 
 .stack-animation__box{
@@ -58,4 +61,8 @@
 
 .ruby{
   background-image: url('../svg/stylesheet/ruby-on-rails.svg');
+}
+
+.aws{
+  background-image: url('../svg/stylesheet/aws.svg');
 }

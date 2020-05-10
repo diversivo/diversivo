@@ -11,10 +11,13 @@ $large      :   1200px;
 
     //colors
     --dark-gray: #5b5b5b;
-    --color--blue: #201AE1;
+    --color--blue: #0000FF;
     --color--green: #1ab817;
     --color--white: #ffffff;
     --color--black: #1c1c1c;
+
+    --color--active:  var(--color--blue);
+    --color--primary--active: var(--color--green);
 
     // font sizes
     --h1-size: 2.25rem;

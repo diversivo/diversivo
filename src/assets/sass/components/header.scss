@@ -13,7 +13,7 @@
     padding: 0 2.5rem;
   }
   @media only screen and (max-width: $small){
-      padding: 0 2rem;
+      padding: 0 1.5rem;
   }
 }
 
@@ -56,7 +56,7 @@ margin: 0;
   top: 0;
   left: 120%;
   background-color: rgba(30,30,30,.95);
-  width: 100vw;
+  width: 103vw;
   height: 100vh;
 }
 }
@@ -64,6 +64,10 @@ margin: 0;
 .header__nav__link{
   color: var(--color--white); 
   text-decoration: 'none';
+  transition: color .3s;
+  &:hover{
+    color: var(--color--active);
+  }
   @media only screen and (max-width: $medium){
     font-size: var(--h1-size);
     letter-spacing: 4px;
@@ -82,5 +86,5 @@ display: none;
 }
 
 .js-header__nav--active{
-left: -40px;
+left: -35px;
 }

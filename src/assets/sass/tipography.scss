@@ -6,7 +6,7 @@
         font-size: 2.5rem;
     }
     @media only screen and(max-width: $small){
-        font-size: 1.9rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -15,8 +15,8 @@ h1,h2,h3,h4,h5,h6,pre,p{
     color: inherit;
 }
 h1,h2,h3,h4,h5,h6{
-    margin-bottom: 1.45rem;
-    margin-top: .6em;
+    margin-bottom: 1.25rem;
+    margin-top: .4em;
     @media only screen and (max-width: $small){
         margin-bottom: .65em;
     }
