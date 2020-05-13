@@ -174,3 +174,45 @@ input[type=text], textarea{
 .footer__nav__li{
     padding: .65rem 0 0 0;
 }
+
+
+.fluid__content{
+    height: 80vh;
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    position: relative;
+    z-index: 10;
+    pointer-events: none;
+    @media only screen and (max-width: $small){
+        width: 95%;
+    }
+}
+
+.fluid-canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.fluid__link{
+    z-index: 10;
+    pointer-events: visible;
+    color: var(--color--black);
+    text-decoration: underline;
+    padding: .65rem 2rem;
+    border-radius: 25px;
+    background-color: white;
+    transition: background-color .2s, color .2s;
+    &:hover{
+        background-color: var(--color--blue);
+        color: var(--color--white);
+    }
+
+}
+
+.fluid__content-link{
+    padding-top: 2em;
+}
