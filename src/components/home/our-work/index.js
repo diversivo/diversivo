@@ -12,34 +12,48 @@ const OurWork = () => (
       className="container"
       style={{
         pointerEvents: 'none',
-        zIndex: 10,
+        color: 'black',
+        zIndex: 1000,
+        position: 'absolute',
       }}
     >
-      <div className="content">
+      <div
+        className="content"
+        style={{
+          padding: '10rem 0 6rem 0',
+        }}
+      >
         <div
           className="flex-cc"
           style={{
             textAlign: 'center',
           }}
         >
-          <pre className="color-white">
+          <pre style={{
+            color: '#A8A8A8',
+          }}
+          >
             TE PODEMOS AYUDAR EN
           </pre>
-          <h1 className="bigger-title color-white">
+          <h1 className="bigger-title">
             Desarrollo de Software,
             <br />
             Branding y Marketing Digital.
           </h1>
-          {/* <Link
+          <Link
             className="content__link"
-            to="/our-work"
+            to="/our-work/"
           >
             QUE HACEMOS
-          </Link> */}
+          </Link>
         </div>
       </div>
     </div>
     <Fluid style={{
+      color: 'white',
+      height: '100%', // Canvas is will respond to size changes without resetting fluid!
+      width: '100%',
+      margin: 0,
       position: 'relative',
     }}
     />

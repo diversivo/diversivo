@@ -394,7 +394,7 @@ let bloomFramebuffers = [];
 let sunrays;
 let sunraysTemp;
 
-let ditheringTexture = createTextureAsync('./assets/js/LDR_LLL1_0.png');
+let ditheringTexture = createTextureAsync('https://cdn.diversivo.cl/fluid/LDR_LLL1_0.png');
 
 let blurProgram            = new Program(blurVertexShader, blurShader);
 let copyProgram            = new Program(baseVertexShader, copyShader);

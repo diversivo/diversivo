@@ -57,7 +57,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-load-script',
       options: {
-        src: 'http://localhost:8080/assets/js/fluid-init.js',
+        src: 'https://cdn.diversivo.cl/fluid/fluid-init.js',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-s3',
+      options: {
+        bucketName: 'diversivo-website',
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
