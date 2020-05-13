@@ -50,14 +50,18 @@ flex: 1;
 margin: 0;
 @media only screen and (max-width: $medium){
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   align-items: flex-start;
   justify-content: center;
-  top: 0;
-  left: 120%;
+  transition: right .5s , filter .5s, opacity .5s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   background-color: rgba(30,30,30,.95);
-  width: 103vw;
+  width: 100vw;
   height: 100vh;
+  top: 0;
+  right: -100%;
+  filter: blur(3em);
+  opacity: 0;
 }
 }
 
@@ -86,5 +90,7 @@ display: none;
 }
 
 .js-header__nav--active{
-left: -35px;
+  right: 0;
+  filter: blur(0);
+  opacity: 1;
 }

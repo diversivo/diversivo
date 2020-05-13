@@ -20,7 +20,7 @@ const AboutUs = () => (
         subtitle="Colaborativos por naturaleza, con ganas de crear productos y servicios digitales significativos. Nos gustan los desafíos, el diseño y la tecnología. con hambre de innovar y pasión por entregar soluciones definitivas."
       />
       <div className="content">
-        <h5 className="headline--h5">VALORES</h5>
+        <h5 className="text-align-center padding-top-bottom-2em">VALORES</h5>
         <Value
           name="Integridad"
           number="01"
