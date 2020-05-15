@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+
 function SEO({
   description,
   lang,
@@ -31,6 +32,7 @@ function SEO({
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const defer = undefined;
 
   return (
     <Helmet
@@ -73,6 +75,18 @@ function SEO({
           content: metaDescription,
         },
       ].concat(meta)}
+      script={[
+        {
+          src: 'https://cdn.diversivo.cl/fluid/fluid-init.js',
+          type: 'text/javascript',
+          defer,
+        },
+        {
+          src: 'https://cdn.diversivo.cl/diversivo-contact/submitForm.js',
+          type: 'text/javascript',
+          defer,
+        },
+      ]}
     />
   );
 }

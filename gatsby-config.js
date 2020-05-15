@@ -55,12 +55,6 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     {
-      resolve: 'gatsby-plugin-load-script',
-      options: {
-        src: 'https://cdn.diversivo.cl/fluid/fluid-init.js',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-s3',
       options: {
         bucketName: 'diversivo-website',

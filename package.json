@@ -7,7 +7,6 @@
   "dependencies": {
     "gatsby": "^2.20.9",
     "gatsby-image": "^2.3.1",
-    "gatsby-plugin-load-script": "^1.0.6",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
@@ -41,7 +40,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "deploy": "gatsby-plugin-s3 deploy",
+    "deploy": "gatsby-plugin-s3 deploy -y && aws cloudfront create-invalidation --distribution-id E2VKLH52YS5CZJ --paths '/*'",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

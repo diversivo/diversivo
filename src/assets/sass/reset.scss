@@ -39,6 +39,7 @@ input,textarea,select,button{
 
 button * {
     pointer-events: none;
+    touch-action: none;
 }
 
 embed,
