@@ -32,7 +32,7 @@ function SEO({
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const defer = undefined;
+  const async = undefined;
 
   return (
     <Helmet
@@ -77,15 +77,15 @@ function SEO({
       ].concat(meta)}
       script={[
         {
-          src: 'https://cdn.diversivo.cl/fluid/fluid-init.js',
+          src: 'https://cdn.diversivo.cl/fluid/fluid-base.js',
           type: 'text/javascript',
-          defer,
+          async,
         },
-        {
-          src: 'https://cdn.diversivo.cl/diversivo-contact/submitForm.js',
-          type: 'text/javascript',
-          defer,
-        },
+        // {
+        //   src: 'https://cdn.diversivo.cl/diversivo-contact/submitForm.js',
+        //   type: 'text/javascript',
+        //   defer,
+        // },
       ]}
     />
   );
