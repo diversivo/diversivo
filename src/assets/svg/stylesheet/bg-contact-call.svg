@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1329.855" height="361.818" viewBox="0 0 1329.855 361.818">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff4b4b"/>
+      <stop offset="1" stop-color="#ce00ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#201ae1"/>
+      <stop offset="1" stop-color="#00dcff"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_10" data-name="Grupo 10" transform="translate(-36 -2347.199)">
+    <g id="Grupo_9" data-name="Grupo 9" transform="translate(-68.917 177)">
+      <path id="Polígono_3" data-name="Polígono 3" d="M124.822,8.842a6,6,0,0,1,10.355,0L254.711,212.968A6,6,0,0,1,249.533,222H10.467a6,6,0,0,1-5.178-9.032Z" transform="translate(215.917 2185.871) rotate(30)" fill="url(#linear-gradient)"/>
+      <path id="Polígono_4" data-name="Polígono 4" d="M119.406,4.465a3,3,0,0,1,5.188,0L241.382,205.493A3,3,0,0,1,238.788,210H5.212a3,3,0,0,1-2.594-4.507Z" transform="translate(218.845 2197.067) rotate(30)" fill="#1c1c1c"/>
+    </g>
+    <g id="Grupo_12" data-name="Grupo 12" transform="translate(1470.772 4876.252) rotate(180)">
+      <path id="Polígono_3-2" data-name="Polígono 3" d="M70.262,8.842a6,6,0,0,1,10.355,0L145.59,119.8a6,6,0,0,1-5.178,9.032H10.467A6,6,0,0,1,5.289,119.8Z" transform="translate(169.33 2185.871) rotate(30)" fill="url(#linear-gradient)"/>
+      <path id="Polígono_4-2" data-name="Polígono 4" d="M68.2,4.465a3,3,0,0,1,5.188,0l65.585,112.891a3,3,0,0,1-2.594,4.507H5.212a3,3,0,0,1-2.594-4.507Z" transform="translate(171.03 2191.368) rotate(30)" fill="#1c1c1c"/>
+    </g>
+    <g id="Grupo_11" data-name="Grupo 11" transform="translate(545.884 286)">
+      <path id="Polígono_3-3" data-name="Polígono 3" d="M47.7,5.894a4,4,0,0,1,6.9,0L98.785,81.337a4,4,0,0,1-3.452,6.021H6.978a4,4,0,0,1-3.452-6.021Z" transform="translate(148.596 2185.871) rotate(30)" fill="url(#linear-gradient-3)"/>
+      <path id="Polígono_4-3" data-name="Polígono 4" d="M46.278,2.977a2,2,0,0,1,3.459,0L94.269,79.631a2,2,0,0,1-1.729,3H3.475a2,2,0,0,1-1.729-3Z" transform="translate(149.748 2190.277) rotate(30)" fill="#1c1c1c"/>
+    </g>
+    <path id="Polígono_1" data-name="Polígono 1" d="M26.317,8.885a6,6,0,0,1,10.365,0L57.736,44.977A6,6,0,0,1,52.554,54H10.446a6,6,0,0,1-5.183-9.023Z" transform="translate(1275.735 2453.095) rotate(150)" fill="url(#linear-gradient-3)"/>
+    <path id="Polígono_2" data-name="Polígono 2" d="M53.832,8.759a6,6,0,0,1,10.335,0l48.494,82.192A6,6,0,0,1,107.494,100H10.506a6,6,0,0,1-5.168-9.049Z" transform="translate(674.905 2406.199) rotate(-30)" fill="url(#linear-gradient)"/>
+    <path id="Polígono_5" data-name="Polígono 5" d="M46.322,8.849a6,6,0,0,1,10.357,0L97.715,78.969A6,6,0,0,1,92.537,88H10.463a6,6,0,0,1-5.178-9.031Z" transform="translate(36 2632.806) rotate(-30)" fill="url(#linear-gradient-3)"/>
+  </g>
+</svg>

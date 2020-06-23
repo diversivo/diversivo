@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
         siteTitle={data.site.siteMetadata.title}
       />
       <div>
-        <div>{children}</div>
+        {children}
       </div>
       <footer className="container footer__container">
         <div className="footer__grid">

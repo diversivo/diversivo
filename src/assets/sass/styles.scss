@@ -13,6 +13,7 @@
 @import "components/stack";
 @import "components/slider";
 @import "components/service";
+@import "components/contact";
 @import "components/value";
 
 // Global
@@ -80,29 +81,6 @@
     color: $primary-color;
     border: none;
     margin-top: 3em;
-}
-
-// Contact Component
-
-.cContact__content{
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 1fr;
-    grid-gap: 48px;
-    place-items: center;
-    padding: 2.8rem 3rem;
-    border-radius: 8px;
-    background: linear-gradient(
-        45deg,
-        #201AE1,
-        #00DCFF
-    );
-    @media only screen and (max-width: $medium){
-        grid-template-columns: 1fr;
-        padding: 2rem 1.5rem;
-        text-align: center;
-    } 
 }
 
 //forms

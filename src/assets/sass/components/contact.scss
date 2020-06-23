@@ -1,0 +1,59 @@
+// Contact Component
+
+.contact-call{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  grid-template-rows: 1fr;
+  grid-gap: 64px;
+  place-items: center;
+  @media only screen and (max-width: $medium){
+      grid-template-columns: 1fr;
+      padding: 2rem 1.5rem;
+      text-align: center;
+  } 
+}
+
+.contact-call__image{
+    width: 100%;
+    max-width: 500px;
+    place-self: center;
+}
+
+.contact-call__box{
+  display: inline;
+  border-radius: 8px;
+}
+
+.icon-buttons__box{
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em 0;
+}
+
+.icon-buttons__link{
+  --icon-size : 52px;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 32px 0 0;
+  border-radius: 50%;
+  background-color: var(--color--white);
+  transition: box-shadow ease 1s;
+  & svg{
+    width: calc(var(--icon-size) - 24px);
+  }
+  &:hover{
+    background: linear-gradient(180deg, #FF4B4B 0%, #CE00FF 100%);
+    box-shadow: 0px 3px 12px #0A00FF;
+  }
+}
+
+.contact-call__bg{
+  background-image: url('../svg/stylesheet/bg-contact-call.svg');
+  background-position: top right;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
