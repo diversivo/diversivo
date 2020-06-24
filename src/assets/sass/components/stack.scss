@@ -20,10 +20,11 @@
   width: var(--size);
   height: var(--size);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   animation-name: stack;
-  animation-duration: 2s;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-delay: 1s;
   border-radius: 50%;
@@ -47,22 +48,31 @@
 // animaciones
 
 @keyframes stack {
-    0% {background-position: 600% 0;}
-    40% { background-position: center 0;}
-    60% { background-position: center 0;}
-    100% {background-position: -600% 0;}
+    0% {background-position: 100% 0;}
+    15% {background-position: 100% 0;}
+
+    20% {background-position: 75% 0;}
+    35% { background-position: 75% 0;}
+    
+    40% { background-position: 50% 0;}
+    65% { background-position: 50% 0;}
+
+    70% { background-position: 25% 0;}
+    95% { background-position: 25% 0;}
+
+    100% {background-position: 0% 0;}
 }
 
 // logos
 
-.react{
-  background-image: url('../svg/stylesheet/react.svg');
+.frontend{
+  background-image: url('../images/stack-logos-frontend.jpg');
 }
 
-.ruby{
-  background-image: url('../svg/stylesheet/ruby-on-rails.svg');
+.backend{
+  background-image: url('../images/stack-logos-backend.jpg');
 }
 
-.aws{
-  background-image: url('../svg/stylesheet/aws.svg');
+.database{
+  background-image: url('../images/stack-logos-database.jpg');
 }

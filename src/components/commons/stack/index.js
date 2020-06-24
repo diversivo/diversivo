@@ -14,9 +14,9 @@ const Stack = () => (
           </h1>
         </div>
         <div className="stack-animation__content">
-          <div className="stack-animation__box stack-animation__box__frontend react" />
-          <div className="stack-animation__box stack-animation__box__develop ruby" />
-          <div className="stack-animation__box stack-animation__box__backend aws" />
+          <div className="stack-animation__box stack-animation__box__frontend frontend" />
+          <div className="stack-animation__box stack-animation__box__develop backend" />
+          <div className="stack-animation__box stack-animation__box__backend database" />
           <img
             className="stack__img"
             src={IsometricArt}
