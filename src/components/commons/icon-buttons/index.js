@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import Phone from '../../../assets/svg/inline/phone.svg';
 import Mail from '../../../assets/svg/inline/mail.svg';
 import Whatsapp from '../../../assets/svg/inline/whatsapp.svg';

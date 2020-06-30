@@ -146,3 +146,23 @@
         padding-right: 0;
     }
 }
+
+.grid{
+    display: grid;
+    justify-items: center;
+    padding-bottom: 6em;
+    max-width: 960px;
+
+}
+
+.l-4-col{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 46px;
+}
+
+.clients-content {
+    margin: 0 auto;
+ & img {
+     max-width: 140px;
+ }
+}
