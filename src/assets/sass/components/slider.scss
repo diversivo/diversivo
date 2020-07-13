@@ -39,13 +39,22 @@
 // Sliders secundarios para otras páginas que no sean la principal.
 
 .main-secondary-slider{
-  height: 324px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  @media only screen and (max-width: $medium){
-    flex-direction: column-reverse;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 40% 10% 10% 40%;
+  &__text, &__img{
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
+    grid-row:1;
+  }
+  &__text{
+    grid-column: 1 / 3;
+    z-index: 10;
+  }
+  &__img{
+    // overflow: visible;
+    grid-column: 2 / 5;
+    width: 100%;
   }
 }

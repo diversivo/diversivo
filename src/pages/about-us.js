@@ -6,7 +6,7 @@ import Contact from '../components/commons/contact';
 import Value from '../components/about-us/values';
 import LayoutOneColTwoCol from '../components/commons/layout-onecol-twocol';
 
-import MainImage from '../assets/images/we-are-main-art.png';
+import MainImage from '../assets/images/about-us.png';
 
 const AboutUs = () => (
   <Layout>

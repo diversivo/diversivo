@@ -58,7 +58,7 @@ const ContactForm = () => {
         />
       </label>
       <label htmlFor="email-input">
-        Correo Eléctronico*:
+        Correo Electrónico*:
         <input
           name="email"
           id="email-input"
@@ -68,7 +68,7 @@ const ContactForm = () => {
         />
       </label>
       <label htmlFor="phone-input">
-        Teléfono*:
+        Teléfono:
         <input
           name="phone"
           id="phone-input"

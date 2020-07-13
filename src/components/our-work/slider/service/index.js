@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Service = ({ category, header, text, img, alt, cssClass }) => (
+const Service = ({ category, header, img, alt, cssClass }) => (
 
   <div className={`${cssClass} content service__content`}>
 
     <div className="service__text">
       <pre className="service__pre">{category}</pre>
-      <h2>{header}</h2>
-      <p>{text}</p>
+      <h3>{header}</h3>
     </div>
 
     <div className="service__multimedia">
