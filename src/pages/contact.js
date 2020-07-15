@@ -4,17 +4,20 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import ContactForm from '../components/contact/contact-form';
 import Video from '../assets/video/contact.mp4';
+import IconButtons from '../components/commons/icon-buttons';
+
 
 const Contact = () => (
   <Layout>
     <SEO title="Diversivo - Somos" />
-    <div className="container">
+    <div className="container contact__bg">
       <div className="content flex-two-col">
         <div className="content__left order-s2-m1">
-          <h2>Existen muchas estrategias para potenciar tu marca en el mundo digital.</h2>
-          {/* <video playsInline autoPlay muted loop id="video">
+          {/* <h2>Existen muchas estrategias para potenciar tu marca en el mundo digital.</h2> */}
+          <video playsInline autoPlay muted loop id="video">
             <source src={Video} type="video/mp4" />
-          </video> */}
+          </video>
+          <IconButtons />
         </div>
         <div className="content__right order-s1-m2">
           <ContactForm />
