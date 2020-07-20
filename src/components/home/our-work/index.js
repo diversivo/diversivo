@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Fluid from './fluid';
+// import Fluid from './fluid';
 
 const OurWork = () => (
   <div className="container-fluid">
@@ -28,7 +28,7 @@ const OurWork = () => (
         </Link>
       </div>
     </div>
-    <Fluid />
+    {/* <Fluid /> */}
   </div>
 );
 

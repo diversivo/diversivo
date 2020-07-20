@@ -12,7 +12,7 @@ const Contact = () => (
       <div className="contact-call__box">
         <div className="contact-call__text">
           <h1 className="bigger-title">Hablemos</h1>
-          <h4>Creemos algo único</h4>
+          {/* <h4>Creemos algo único</h4> */}
         </div>
         <div className="contact-call__actions">
           <IconButtons />
