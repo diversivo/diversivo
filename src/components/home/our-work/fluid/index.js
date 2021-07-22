@@ -4,16 +4,31 @@ import React, { useEffect, useRef } from 'react';
 const Fluid = ({ style }) => {
   const scriptRef = useRef();
   useEffect(() => {
-    console.log(scriptRef.current);
-
-    if (typeof window !== 'undefined' && typeof window.fluid !== 'undefined') {
-      window.fluid();
-    }
-  }, [scriptRef]);
+    setTimeout(
+      () => {
+        if (typeof window !== 'undefined' && typeof VANTA !== 'undefined') {
+          console.log('HERE!!!');
+          VANTA.BIRDS({
+            el: '#fluid-canvas',
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0xffffff,
+            wingSpan: 35.00,
+            speedLimit: 4.00,
+            separation: 68.00,
+            cohesion: 100.00,
+          });
+        }
+      }, 10000,
+    );
+  });
   return (
     <>
-      <div ref={scriptRef} />
-      <canvas className="fluid-canvas" style={style} />
+      <canvas id="fluid-canvas" />
     </>
   );
 };

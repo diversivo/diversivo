@@ -77,15 +77,13 @@ function SEO({
       ].concat(meta)}
       script={[
         {
-          src: 'https://cdn.diversivo.cl/fluid/fluid-base.js',
+          src: 'https://www.vantajs.com/dist/vanta.birds.min.js',
           type: 'text/javascript',
-          async,
         },
-        // {
-        //   src: 'https://cdn.diversivo.cl/diversivo-contact/submitForm.js',
-        //   type: 'text/javascript',
-        //   defer,
-        // },
+        {
+          src: 'https://www.vantajs.com/vendor/three.r95.min.js',
+          type: 'text/javascript',
+        },
       ]}
     />
   );
